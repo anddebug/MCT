@@ -4,7 +4,7 @@ void setup()
 {
   Serial.begin (9600);
 
-  Serial.println ("Bitmuster\tint8_t");
+  Serial.println ("Bitmuster\tuint8_t\t\tint8_t");
   
   for (int i = 0; i <= 255; i++)
     {
@@ -19,7 +19,10 @@ void setup()
         Serial.print ("\t");
       }
 
-      Serial.println ((int8_t) i);
+      Serial.print ((uint8_t) i);
+      Serial.print("\t\t");
+      Serial.println ((int8_t)  i);
+
     }
 }
 
